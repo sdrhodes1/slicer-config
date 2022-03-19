@@ -29,6 +29,8 @@ jobs:
         path: ${{ github.workspace }}/vendor-bundle.zip
     - name: Upload vendor bundle to release
       uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ github.event.release.upload_url }}
         asset_path: ./vendor-bundle.zip
