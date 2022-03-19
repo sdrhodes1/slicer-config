@@ -1,0 +1,36 @@
+name: Build on Release
+
+on:
+  release:
+    types: [published]
+jobs:
+  build:
+  runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v2
+      with:
+        python-version: "3.10"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Run build script
+      run: python main.py
+    - name: Zip up the vendor folder
+      uses: papeloto/action-zip@v1
+      with:
+        files: vendor/
+        dest: vendor-bundle.zip
+    - uses: actions/upload-artifact@v1
+      with:
+        name: vendor-bundle-artifact
+        path: ${{ github.workspace }}/vendor-bundle.zip
+    - name: Upload vendor bundle to release
+      uses: actions/upload-release-asset@v1
+      with:
+        upload_url: ${{ github.event.release.upload_url }}
+        asset_path: ./vendor-bundle.zip
+        asset_name: vendor-bundle.zip
+        asset_content_type: application/zip
