@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.4](https://github.com/iforge-uos/slicer-config/compare/v1.1.3...v1.1.4) (2022-03-19)
+
+
+### Bug Fixes
+
+* One more try... ([400b6b6](https://github.com/iforge-uos/slicer-config/commit/400b6b6b60ee84339c30796edc80627b3ab514c5))
+
 ### [1.1.3](https://github.com/iforge-uos/slicer-config/compare/v1.1.2...v1.1.3) (2022-03-19)
 
 
