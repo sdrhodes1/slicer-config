@@ -1,14 +1,11 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
-
-name: Build and Release
+name: Test and Release
 
 on:
   push:
     branches:
       - main
 jobs:
-  build-and-release:
+  test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -27,22 +24,11 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Run build script
-      run: python main.py
-    - name: Zip up the vendor folder
-      uses: papeloto/action-zip@v1
-      with:
-        files: vendor/
-        dest: vendor-bundle.zip
-    - uses: actions/upload-artifact@v1
-      with:
-        name: vendor-bundle-artifact
-        path: ${{ github.workspace }}/vendor-bundle.zip
+  release-pr:
+    runs-on: ubuntu-latest
+    steps:
     - name: Release please
       uses: google-github-actions/release-please-action@v3
       with:
         release-type: simple
         package-name: release-please-action
-        extra-files: |
-          vendor-bundle.zip
-          iForge-PrusaSlicer-config-bundle.ini
