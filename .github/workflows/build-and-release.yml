@@ -9,9 +9,7 @@ on:
       - main
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.10
@@ -32,7 +30,25 @@ jobs:
     - name: Run build script
       run: |
         python main.py
-    - uses: google-github-actions/release-please-action@v3
+    - name: Collect release artifacts
+      
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Zip up the vendor folder
+      uses: papeloto/action-zip@v1
+      with:
+        files: vendor/
+        dest: vendor-bundle.zip
+    - uses: actions/upload-artifact@v1
+      with:
+        name: vendor-bundle-artifact
+        path: ${{ github.workspace }}/vendor-bundle.zip
+    - name: Release please
+      uses: google-github-actions/release-please-action@v3
       with:
         release-type: simple
         package-name: release-please-action
+        extra-files: |
+          vendor-bundle.zip
+          iForge-PrusaSlicer-config-bundle.ini
