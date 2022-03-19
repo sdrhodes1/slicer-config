@@ -7,4 +7,4 @@ if __name__ == '__main__':
 
         # write
         cfg.write_vendor("iforge_config_vendor.ini")
-        cfg.write_bundle("iforge_config_bundle.ini")
+        # cfg.write_bundle("iforge_config_bundle.ini")
