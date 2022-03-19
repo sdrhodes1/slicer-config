@@ -6,5 +6,5 @@ if __name__ == '__main__':
         # cfg.update_from_ini("iForge.ini")
 
         # write
-        cfg.write_vendor("iforge_config_vendor.ini")
-        # cfg.write_bundle("iforge_config_bundle.ini")
+        cfg.write_vendor("vendor/iForge.ini")
+        cfg.write_bundle("iForge-PrusaSlicer-config-bundle.ini")
