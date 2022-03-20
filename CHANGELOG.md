@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/iforge-uos/slicer-config/compare/v1.1.4...v1.2.0) (2022-03-20)
+
+
+### Features
+
+* Created vendor bundle readme ([87974e1](https://github.com/iforge-uos/slicer-config/commit/87974e199d8bc44c3b1bd23bf64da3a8655806c3))
+
 ### [1.1.4](https://github.com/iforge-uos/slicer-config/compare/v1.1.3...v1.1.4) (2022-03-19)
 
 
