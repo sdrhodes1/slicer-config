@@ -1,7 +1,8 @@
 name: Build on Release
 
 on:
-  release
+  release:
+    types: [published, edited]
 jobs:
   build:
     runs-on: ubuntu-latest
