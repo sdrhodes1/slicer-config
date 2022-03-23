@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.0.2](https://github.com/iforge-uos/slicer-config/compare/v2.0.1...v2.0.2) (2022-03-23)
+
+
+### Bug Fixes
+
+* Update build on release action ([1aec935](https://github.com/iforge-uos/slicer-config/commit/1aec93523e28c4ac77c246495dc7813491f37aea))
+
 ### [2.0.1](https://github.com/iforge-uos/slicer-config/compare/v2.0.0...v2.0.1) (2022-03-23)
 
 
