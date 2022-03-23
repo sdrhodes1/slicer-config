@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.0.3](https://github.com/iforge-uos/slicer-config/compare/v2.0.2...v2.0.3) (2022-03-23)
+
+
+### Bug Fixes
+
+* add manual build script ([950963d](https://github.com/iforge-uos/slicer-config/commit/950963d66e580f65fcbd119ea9859bc16294366d))
+
 ### [2.0.2](https://github.com/iforge-uos/slicer-config/compare/v2.0.1...v2.0.2) (2022-03-23)
 
 
