@@ -39,7 +39,7 @@ class Config:
         with open(f"{filename_root}.ini") as file:
             line = f"\n{file.readline()}"  # prepend line with \n for regex detection
             while line != "\n":
-                matches = re.findall("(?<=\s\[)[a-zA-Z]+.*[a-zA-Z]*(?=\]\s)", line)
+                matches = re.findall(r"(?<=\s\[)[a-zA-Z]+.*[a-zA-Z]*(?=\]\s)", line)
                 if matches:
                     matches = matches[0].split(":") + [""]
                     running_key = matches[1]
