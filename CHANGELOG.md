@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.0](https://github.com/iforge-uos/slicer-config/compare/v1.2.0...v2.0.0) (2022-03-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update Ultimaker Profiles
+
+### Features
+
+* Update Ultimaker Profiles ([cc56621](https://github.com/iforge-uos/slicer-config/commit/cc56621a2a89190772432f6ed05c0f029f5df544))
+
+
+### Bug Fixes
+
+* ApPeAsE pEp8 ([dbca8a7](https://github.com/iforge-uos/slicer-config/commit/dbca8a7c6a0d5b5d44a3298a89727438a945fca3))
+
 ## [1.2.0](https://github.com/iforge-uos/slicer-config/compare/v1.1.4...v1.2.0) (2022-03-20)
 
 
