@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/iforge-uos/slicer-config/compare/v2.0.3...v2.1.0) (2022-04-04)
+
+
+### Features
+
+* Added vendor thumbnails ([42f5745](https://github.com/iforge-uos/slicer-config/commit/42f574515812b439fd581ed105aa5aa6e296b49e))
+
 ### [2.0.3](https://github.com/iforge-uos/slicer-config/compare/v2.0.2...v2.0.3) (2022-03-23)
 
 
