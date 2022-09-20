@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/iforge-uos/slicer-config/compare/v2.1.0...v2.2.0) (2022-09-20)
+
+
+### Features
+
+* added PETG and changed start profile ([8e54567](https://github.com/iforge-uos/slicer-config/commit/8e545673463d4e5cfc8138f68e2c35ed6f013496))
+
 ## [2.1.0](https://github.com/iforge-uos/slicer-config/compare/v2.0.3...v2.1.0) (2022-04-04)
 
 
