@@ -1109,7 +1109,7 @@
         "filament_retract_lift_below": "nil",
         "filament_retract_restart_extra": "nil",
         "filament_retract_speed": "nil",
-        "filament_settings_id": "IForge PETG",
+        "filament_settings_id": "\"\"",
         "filament_soluble": "0",
         "filament_spool_weight": "0",
         "filament_toolchange_delay": "0",
