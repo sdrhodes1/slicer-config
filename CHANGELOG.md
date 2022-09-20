@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.2.1](https://github.com/iforge-uos/slicer-config/compare/v2.2.0...v2.2.1) (2022-09-20)
+
+
+### Bug Fixes
+
+* attempted fix of bundle ([797ee7e](https://github.com/iforge-uos/slicer-config/commit/797ee7e03885003e6c2033903a999c8e601ae05b))
+* petg now appearing in slicer ([099a94e](https://github.com/iforge-uos/slicer-config/commit/099a94e75c35a85069febed4821c0d08d847f610))
+
 ## [2.2.0](https://github.com/iforge-uos/slicer-config/compare/v2.1.0...v2.2.0) (2022-09-20)
 
 
