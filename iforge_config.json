@@ -1063,7 +1063,7 @@
         "min_print_speed": "10",
         "slowdown_below_layer_time": "5",
         "start_filament_gcode": "\"; iForge PLA - Filament gcode\\n\"",
-        "temperature": "215",
+        "temperature": "210",
         "compatible_printers": "\"iForge Prusa\""
       }
     },
