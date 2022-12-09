@@ -1125,7 +1125,7 @@
         "min_print_speed": "10",
         "slowdown_below_layer_time": "5",
         "start_filament_gcode": "\"; iForge PETG - Filament gcode\\n\"",
-        "temperature": "250",
+        "temperature": "235",
         "compatible_printers": "\"iForge Prusa\""
       }
     }
